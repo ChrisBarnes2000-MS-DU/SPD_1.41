@@ -23,11 +23,11 @@ the longest substring is:    xabcdefgh """
 
 def longest_substring(letters):
     print(letters)
-    substring = list(letters)
-    print(substring)
-    return substring.join('')
+    letters = list(letters)
+    substring = ''
+    return substring.join(letters)
 
 
 if __name__ == "__main__":
     letters = 'xabcdxabcdefghxklmnxjk'
-    longest_substring(letters)
+    print(longest_substring(letters))
