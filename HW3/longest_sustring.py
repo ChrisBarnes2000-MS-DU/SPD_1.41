@@ -22,12 +22,31 @@ the longest substring is:    xabcdefgh """
 
 
 def longest_substring(letters):
-    print(letters)
-    letters = list(letters)
+    substrings = substring(letters)
+    longest_substring = largest(substrings)
+    return longest_substring
+
+def substring(letters):
     substring = ''
-    return substring.join(letters)
+    possible = []
+    letters = list(letters)
+    for letter in letters:
+        if letter not in substring:
+            substring += letter
+        else:
+        # if substring not in possible:
+            possible.append(substring)
+            # substring = ''
+    print(possible)
+    return possible
+
+def largest(substrings):
+    largest = max(substrings)
+    print(largest)
+    return largest
 
 
 if __name__ == "__main__":
     letters = 'xabcdxabcdefghxklmnxjk'
     print(longest_substring(letters))
+    # longest_substring(letters)
