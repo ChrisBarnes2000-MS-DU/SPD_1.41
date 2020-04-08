@@ -17,8 +17,9 @@ def histo_dups(arry):
     # Runtime: O(n+n)
     hist = {}
     for item in arry:
-        hist[item] = hist.get[item, 0] + 1
-        if item in hist.values() > 1:
+        hist[item] = hist.get(item, 0) + 1
+    for item in hist.values():
+        if item > 1:
             return True
 
 
