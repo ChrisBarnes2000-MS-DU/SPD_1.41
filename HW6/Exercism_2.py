@@ -92,11 +92,21 @@ class Highscore:
 
 
 if __name__ == "__main__":                              # RunTime:
-    hs = Highscore([5, 1, 3, 6, 8, 2, 4, 7])
-    highest = hs.highestscore()
+    hs_1 = Highscore([5, 1, 3, 6, 8, 2, 4, 7])
+    highest = hs_1.highestscore()
     print(highest)
 
-    top_3 = hs.top_3_scores()
+    top_3 = hs_1.top_3_scores()
     
-    ladded = hs.last_added
+    ladded = hs_1.last_added
+    print(ladded)
+
+    print("\n--------\n")
+    hs_2 = Highscore([36, 70, 50, 300, 40, 80, 10])
+    highest = hs_2.highestscore()
+    print(highest)
+
+    top_3 = hs_2.top_3_scores()
+
+    ladded = hs_2.last_added
     print(ladded)
