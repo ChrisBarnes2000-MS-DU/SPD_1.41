@@ -24,7 +24,10 @@
     - 1 <= nums[i] <= 10^5
 -4 Think out loud
   -4a Brainstorm solutions
-        -
+        - split the array into individual numbers
+        - split the numbers into individual digits (this is because integers don't have a length)
+        - check if the number of digits is even using module %      if so add 1 to count
+        - return the count
   -4b Explain your rationale
         -
   -4c Discuss tradeoffs
@@ -34,7 +37,14 @@
 """
 
 """Pseudo Approach
-    -
+    - [12, 345, 2, 6, 7896]
+    index   |   value   |   response    |   T/F     |   Count
+      0     |     12    |       0       |   True    |     1
+      1     |    345    |       1       |   False   |     1
+      2     |     2     |       1       |   False   |     1
+      3     |     6     |       1       |   False   |     1
+      4     |   7896    |       0       |   True    |     2
+    Count = 2
 
     Edge Cases:
         -
