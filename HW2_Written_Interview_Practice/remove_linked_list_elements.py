@@ -14,6 +14,7 @@
 -2 Ask clarifying questions
     - Will it be a double or singly linked list?
     - How many duplicates/occurrences of the target can we expext?
+    - do we care about modifying the original linked list
 -3 State your assumptions
     - Only worry about a singly linked list
     - There may be any amount of occurrences
